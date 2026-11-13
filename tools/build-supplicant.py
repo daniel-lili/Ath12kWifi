@@ -37,7 +37,10 @@ with (output / "build.log").open("w") as log:
     result = subprocess.run(command, cwd=root / "out/wpa-src/wpa_supplicant", stdout=log, stderr=subprocess.STDOUT)
 if result.returncode:
     lines = (output / "build.log").read_text().splitlines()
-    print("\n".join(line for line in lines if not line.startswith(compiler))[-12000:])
+    tail = "\n".join(line for line in lines if not line.startswith(compiler))[-12000:]
+    print(tail)
+    import sys as _sys
+    _sys.stderr.write("\n[wpa build.log tail]\n" + tail + "\n")
     raise SystemExit(result.returncode)
 binary = output / "bin/wpa_supplicant"
 binary.parent.mkdir(exist_ok=True)
