@@ -6,12 +6,11 @@ from pathlib import Path
 import subprocess
 import tarfile
 
+root = Path(__file__).resolve().parents[1]
 marker = root / "out/wpa-src/.vendored-prepared"
 if marker.is_file():
     print("vendored prepared wpa source present; skipping fetch and staging")
     raise SystemExit(0)
-
-root = Path(__file__).resolve().parents[1]
 subprocess.run(["python3", str(root / "tools/fetch-sources.py"), "--check"], check=True)
 lock = json.loads((root / "tools/source-lock.json").read_text())["supplicant"]
 out = root / "out/wpa-src"
