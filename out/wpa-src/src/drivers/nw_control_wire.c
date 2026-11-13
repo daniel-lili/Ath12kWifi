@@ -1,0 +1,1 @@
+/private/tmp/Ath12kWifi/src/nw_control_wire.c

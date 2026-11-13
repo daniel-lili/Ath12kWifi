@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "08e23937e16d0155e55cab2b51f51fbe10d80a1aa91c4e15442645059b737ef6",
+  "changes": {
+    "src/drivers/drivers.mak": {
+      "original_sha256": "a62bc56d6dee9ec8719c8b37854b02ffe5fd30fa8ef7fcf71a2f6958d15373fb",
+      "staged_sha256": "573462d80c5c4c96a63995f4ec03e05ee4933c718a613b681fcb0836f040559a"
+    },
+    "src/drivers/drivers.c": {
+      "original_sha256": "557ed7944f1294f0248b32e87c9d95eadc7485d330c7696617bd4358571abb9a",
+      "staged_sha256": "f6f905a3ef038c0cc67c8d7ed9913b6ac9ef183ff81eac79140cf3c1501fdf06"
+    },
+    "wpa_supplicant/wpa_supplicant.c": {
+      "original_sha256": "38711194c4e60c05244e863cecff6acd13351a871eac46411662ef3291025364",
+      "staged_sha256": "ed3488161583f2798d38fb2fb5b64822bf57b94180a2449a4bf2bfc99cbd29d1"
+    }
+  },
+  "authentication_algorithms_modified": false
+}

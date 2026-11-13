@@ -1,0 +1,1 @@
+/private/tmp/Ath12kWifi/userspace/nw_wireless_event.c
